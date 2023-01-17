@@ -10,7 +10,7 @@ drop_location=$(pwd)
 echo "drop location is ***"
 echo $drop_location
 
-cd drop
+#cd drop
 ls
 
 mkdir /var/www/html/my_app
