@@ -1,6 +1,6 @@
 server {
     listen 80;
-    server_name 20.207.80.249; # Replace with the actual domain name
+    server_name 20.235.122.190; # Replace with the actual domain name
 
     location / {
         include uwsgi_params;
