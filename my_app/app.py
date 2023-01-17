@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 
 from flask import Flask
+import socket
 app = Flask(__name__)
+
+hostn = socket.gethostname()
 
 @app.route("/")
 def index():
@@ -10,6 +13,10 @@ def index():
       <a href="/page1">Navigate to page1</a>
       <a href="/page2">Navigate to Page2</a>
       """
+
+@app.route("/hostr")
+def hostr():
+    return f'Running on hostname {hostn}'
 
 @app.route("/page1")
 def page1():
